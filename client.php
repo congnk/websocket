@@ -20,17 +20,26 @@
     	<h1>WebSockets Client</h1>
         
         <div id="chatLog" class="chatPane">
-			<a id="clear_scr" href="javascript:;" class="qp">清屏</a>
+			<a href="javascript:;" class="clear_scr">清屏</a>
         
         </div>
         <p id="examples">e.g. try 'hi', 'name', 'age', 'today'</p>
         
+		<form id="chat_form" >
+			<input id="chat_box" type="text" />
+			<button id="sd_chat" type="submit">发送</button><br/>
+		</form>
+		<br/><br/>
 		<form id="rename_form" >
 			<input id="text" type="text" />
-			<button id="sd" type="submit">改名</button><br/>
+			<button id="sd" type="submit">改名</button>
 		</form>
         <button id="disconnect">断开</button>
 		<button id="reconnect" disabled>重新连接</button>
+			<div id="console_area" class="pane">
+				<a href="javascript:;" class="clear_scr">清除</a>
+        
+			</div>
 		</div>
 		<div id="userList" class="roll_right list">
 			<ul>用户列表
@@ -40,7 +49,7 @@
   </div>
 <script type="text/javascript">
 $(function() {
-		$("#clear_scr").on("click",function(){
+		$(".clear_scr").on("click",function(){
 			$(this).find("~").remove();
 		});
 		
@@ -68,13 +77,19 @@ var socket;
 $(document).ready(function() {
 	webSocketConnect();
 
-	$("#rename_form").submit(function(){
+	$("#rename_form").submit(function(e){
+		e.preventDefault();
 		send( $('#text').val() );
 		var date = new Date(); 
 		date.setTime(date.getTime() + ( 30 * 60 * 1000)); 
 		$.cookie("name",$("#text").val(),{ expires: date });
-		$('#text').val("");
 		return false;
+	});
+	
+	$("#chat_form").submit(function(e){
+		e.preventDefault();
+		sendMessage( $('#chat_box').val() );
+		$('#chat_box').val("");
 	});
 	
 
@@ -100,7 +115,7 @@ $(document).ready(function() {
 				$("#disconnect").attr("disabled",false);
 				$("#reconnect").attr("disabled",true);
 				if($.cookie('name')){
-					console.log($.cookie('name'));
+					$("#text").val( $.cookie('name') );
 					socket.send('type=add&ming='+$.cookie('name'));
 				}	
 			}
@@ -144,11 +159,28 @@ function send(text){
 	}
 	try{
 		socket.send('type=add&ming='+text);
-		message('Sent: '+text,'event')
+		operateLog('Sent: '+text,'event')
 	} catch(exception){
-		message(' 消息未发送成功 ','Warning!');
+		operateLog(' 消息未发送成功 ','warning!');
 	}
+}
 
+function sendMessage(text){
+	if(text==""){
+		return ;	
+	}
+	try{
+		var uid = $.cookie("name");
+		socket.send('type=chat&content='+text + '&ming=' + uid );
+		operateLog('Sent: '+text ,"normal");
+	} catch(exception){
+		operateLog(' 消息未发送成功 ','warning');
+	}
+}
+
+function operateLog(text,type){
+	var $aa = $("<p></p>").addClass(type).text(text);
+	$('#console_area').append( $aa );
 }
 
 function parseMessage(msg){
@@ -162,8 +194,13 @@ function parseMessage(msg){
 		var rid=jdata.removekey ;
 		$("#userList li#" + rid).css({"color":"grey"});
 		message(jdata.nrong,'warning');
+		return ;
 	}
-	
+	if(jdata.chat){
+		message(jdata.username + ":",'title');
+		message(jdata.nrong,'chat');
+		return ;
+	}
 }
 
 function reconnect(){
@@ -176,6 +213,8 @@ function reconnect(){
 	function message(msg , style_class){
 		var $aa = $("<p></p>").addClass(style_class).text(msg);
 		$('#chatLog').append( $aa );
+		var div = $('#chatLog')[0];
+		div.scrollTop = div.scrollHeight;
 	}//End message()
 </script>
 </body>

@@ -149,7 +149,7 @@ class Sock{
             $this->users[$k]['ming']=$g['ming'];
             $ar['add']=true;
             $ar['nrong']='欢迎  <'.$g['ming'].'>  加入！';
-			$ar['username']=.$g['ming'];
+			$ar['username']= $g['ming'];
             $ar['users']=$this->getusers();
             $key='all';
         }else if($g['type']=='ltiao'){
@@ -157,8 +157,9 @@ class Sock{
             $key=$g['key'];
         }else if($g['type']=='chat'){
 			$ar['chat']=true;
-            $ar['nrong']=.$g['content'];
-			$ar['username']=.$g['ming'];
+            $ar['nrong'] = $g['content'];
+			$ar['username'] = $g['ming'];
+			$key='all';
 		}
         $msg=json_encode($ar, JSON_UNESCAPED_UNICODE);
         $this->e($msg);

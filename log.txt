@@ -940,3 +940,429 @@ type=add&ming=sss
 key:90 close
 type=add&ming=ss
 {"add":true,"nrong":"欢迎  <ss>  加入！","users":{"82":"2212","91":"ss"}}
+type=add&ming=SSS
+{"add":true,"nrong":"欢迎  <SSS>  加入！","users":{"82":"2212","91":"ss","92":"SSS"}}
+type=add&ming=WWWWWWWWWWWW
+{"add":true,"nrong":"欢迎  <WWWWWWWWWWWW>  加入！","users":{"82":"2212","91":"ss","92":"WWWWWWWWWWWW"}}
+type=add&ming=WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWEEEEEEEEEEEEEEEEEEEEEEEEEE
+{"add":true,"nrong":"欢迎  <WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWEEEEEEEEEEEEEEEEEEEEEEEEEE>  加入！","users":{"82":"2212","91":"ss","92":"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWEEEEEEEEEEEEEEEEEEEEEEEEEE"}}
+
+[]
+
+[]
+key:92 close
+key:82 close
+key:91 close
+type=add&ming=AAAAAAAAAAAAA
+{"add":true,"nrong":"欢迎  <AAAAAAAAAAAAA>  加入！","users":{"93":"AAAAAAAAAAAAA"}}
+type=add&ming=SS
+{"add":true,"nrong":"欢迎  <SS>  加入！","users":{"93":"SS"}}
+type=add&ming=EEWQ
+{"add":true,"nrong":"欢迎  <EEWQ>  加入！","users":{"93":"EEWQ"}}
+type=add&ming=EWQ 
+{"add":true,"nrong":"欢迎  <EWQ >  加入！","users":{"93":"EWQ "}}
+type=add&ming=ssss
+{"add":true,"nrong":"欢迎  <ssss>  加入！","users":{"93":"EWQ ","94":"ssss"}}
+key:94 close
+key:95 close
+type=add&ming=sd
+{"add":true,"nrong":"欢迎  <sd>  加入！","users":{"93":"EWQ ","96":"sd"}}
+key:96 close
+key:97 close
+type=add&ming=sd
+{"add":true,"nrong":"欢迎  <sd>  加入！","users":{"93":"EWQ ","98":"sd"}}
+key:98 close
+key:99 close
+type=add&ming=sseq
+{"add":true,"nrong":"欢迎  <sseq>  加入！","users":{"93":"EWQ ","100":"sseq"}}
+key:100 close
+key:101 close
+key:102 close
+key:103 close
+key:104 close
+type=add&ming=aa
+{"add":true,"nrong":"欢迎  <aa>  加入！","users":{"93":"EWQ ","105":"aa"}}
+key:105 close
+key:106 close
+key:107 close
+type=add&ming=sss
+{"add":true,"nrong":"欢迎  <sss>  加入！","users":{"93":"EWQ ","108":"sss"}}
+key:108 close
+key:109 close
+key:110 close
+type=add&ming=sss
+{"add":true,"nrong":"欢迎  <sss>  加入！","users":{"93":"EWQ ","111":"sss"}}
+type=add&ming=sss
+{"add":true,"nrong":"欢迎  <sss>  加入！","users":{"93":"EWQ ","111":"sss","112":"sss"}}
+key:113 close
+type=add&ming=sss
+{"add":true,"nrong":"欢迎  <sss>  加入！","users":{"93":"EWQ ","111":"sss","112":"sss","114":"sss"}}
+type=add&ming=ssss
+{"add":true,"nrong":"欢迎  <ssss>  加入！","users":{"93":"EWQ ","111":"sss","112":"sss","114":"ssss"}}
+type=add&ming=eee
+{"add":true,"nrong":"欢迎  <eee>  加入！","users":{"93":"EWQ ","111":"sss","112":"sss","114":"eee"}}
+type=add&ming=qq
+{"add":true,"nrong":"欢迎  <qq>  加入！","users":{"93":"EWQ ","111":"sss","112":"sss","114":"qq"}}
+type=add&ming=ewqerwe
+{"add":true,"nrong":"欢迎  <ewqerwe>  加入！","users":{"93":"EWQ ","111":"sss","112":"sss","114":"ewqerwe"}}
+type=add&ming=ewqer
+{"add":true,"nrong":"欢迎  <ewqer>  加入！","users":{"93":"EWQ ","111":"sss","112":"sss","114":"ewqer"}}
+type=add&ming=9999
+{"add":true,"nrong":"欢迎  <9999>  加入！","users":{"93":"EWQ ","111":"sss","112":"sss","114":"9999"}}
+key:93 close
+type=add&ming=today
+{"add":true,"nrong":"欢迎  <today>  加入！","users":{"111":"sss","112":"sss","114":"9999","115":"today"}}
+type=add&ming=sq
+{"add":true,"nrong":"欢迎  <sq>  加入！","users":{"111":"sss","112":"sss","114":"9999","115":"sq"}}
+type=add&ming=eq
+{"add":true,"nrong":"欢迎  <eq>  加入！","users":{"111":"sss","112":"sss","114":"9999","115":"eq"}}
+type=add&ming=1
+{"add":true,"nrong":"欢迎  <1>  加入！","users":{"111":"sss","112":"sss","114":"1","115":"eq"}}
+type=add&ming=2
+{"add":true,"nrong":"欢迎  <2>  加入！","users":{"111":"sss","112":"sss","114":"2","115":"eq"}}
+type=add&ming=3
+{"add":true,"nrong":"欢迎  <3>  加入！","users":{"111":"sss","112":"3","114":"2","115":"eq"}}
+type=add&ming=55
+{"add":true,"nrong":"欢迎  <55>  加入！","users":{"111":"55","112":"3","114":"2","115":"eq"}}
+key:111 close
+type=add&ming=55
+{"add":true,"nrong":"欢迎  <55>  加入！","users":{"112":"3","114":"2","115":"eq","116":"55"}}
+key:112 close
+type=chat&content=seq&ming=undefined
+[]
+type=add&ming=ssssss
+{"add":true,"nrong":"欢迎  <ssssss>  加入！","users":{"114":"2","115":"eq","116":"55","117":"ssssss"}}
+type=chat&content=wwwwww&ming=ssssss
+[]
+type=chat&content=wwwwweq&ming=ssssss
+[]
+Server Started : 2014-10-20 08:46:32
+Listening on   : 127.0.0.1 port 8000
+type=add&ming=ssssss
+{"add":true,"nrong":"欢迎  <ssssss>  加入！","username":"ssssss","users":["ssssss"]}
+type=chat&content=wq&ming=ssssss
+{"chat":true,"nrong":"wq","username":"ssssss"}
+type=chat&content=weq&ming=ssssss
+{"chat":true,"nrong":"weq","username":"ssssss"}
+type=chat&content=wqwe&ming=ssssss
+{"chat":true,"nrong":"wqwe","username":"ssssss"}
+type=chat&content=wq&ming=ssssss
+{"chat":true,"nrong":"wq","username":"ssssss"}
+type=add&ming=qw
+{"add":true,"nrong":"欢迎  <qw>  加入！","username":"qw","users":["qw"]}
+type=chat&content=ew&ming=qw
+{"chat":true,"nrong":"ew","username":"qw"}
+Server Started : 2014-10-20 08:49:52
+Listening on   : 127.0.0.1 port 8000
+type=add&ming=qw
+{"add":true,"nrong":"欢迎  <qw>  加入！","username":"qw","users":["qw"]}
+type=chat&content=we&ming=qw
+{"chat":true,"nrong":"we","username":"qw"}
+key:0 close
+type=add&ming=qw
+{"add":true,"nrong":"欢迎  <qw>  加入！","username":"qw","users":{"1":"qw"}}
+type=chat&content=qewq&ming=qw
+{"chat":true,"nrong":"qewq","username":"qw"}
+type=chat&content=aeq&ming=qw
+{"chat":true,"nrong":"aeq","username":"qw"}
+type=chat&content=ade&ming=qw
+{"chat":true,"nrong":"ade","username":"qw"}
+key:1 close
+type=add&ming=qw
+{"add":true,"nrong":"欢迎  <qw>  加入！","username":"qw","users":{"2":"qw"}}
+type=chat&content=ew&ming=qw
+{"chat":true,"nrong":"ew","username":"qw"}
+type=chat&content=sdqweqwerwe&ming=qw
+{"chat":true,"nrong":"sdqweqwerwe","username":"qw"}
+key:2 close
+type=add&ming=qw
+{"add":true,"nrong":"欢迎  <qw>  加入！","username":"qw","users":{"3":"qw"}}
+type=chat&content=sdqe&ming=qw
+{"chat":true,"nrong":"sdqe","username":"qw"}
+type=chat&content=wwwwqe&ming=qw
+{"chat":true,"nrong":"wwwwqe","username":"qw"}
+type=add&ming=look
+{"add":true,"nrong":"欢迎  <look>  加入！","username":"look","users":{"3":"qw","4":"look"}}
+type=chat&content=eq&ming=look
+{"chat":true,"nrong":"eq","username":"look"}
+type=chat&content=bad&ming=qw
+{"chat":true,"nrong":"bad","username":"qw"}
+type=chat&content=hi&ming=look
+{"chat":true,"nrong":"hi","username":"look"}
+key:4 close
+type=add&ming=look
+{"add":true,"nrong":"欢迎  <look>  加入！","username":"look","users":{"3":"qw","5":"look"}}
+key:3 close
+type=add&ming=aaaew
+{"add":true,"nrong":"欢迎  <aaaew>  加入！","username":"aaaew","users":{"5":"look","6":"aaaew"}}
+type=chat&content=ewq&ming=aaaew
+{"chat":true,"nrong":"ewq","username":"aaaew"}
+type=chat&content=ewq&ming=aaaew
+{"chat":true,"nrong":"ewq","username":"aaaew"}
+key:6 close
+type=chat&content=SS&ming=aaaew
+{"chat":true,"nrong":"SS","username":"aaaew"}
+type=add&ming=SSSS
+{"add":true,"nrong":"欢迎  <SSSS>  加入！","username":"SSSS","users":{"5":"look","7":"SSSS"}}
+type=add&ming=AAA
+{"add":true,"nrong":"欢迎  <AAA>  加入！","username":"AAA","users":{"5":"look","7":"AAA"}}
+key:5 close
+type=add&ming=ss 
+{"add":true,"nrong":"欢迎  <ss >  加入！","username":"ss ","users":{"7":"AAA","8":"ss "}}
+key:8 close
+type=add&ming=sd
+{"add":true,"nrong":"欢迎  <sd>  加入！","username":"sd","users":{"7":"AAA","9":"sd"}}
+type=add&ming=ss
+{"add":true,"nrong":"欢迎  <ss>  加入！","username":"ss","users":{"7":"AAA","9":"ss"}}
+key:7 close
+type=add&ming=ss
+{"add":true,"nrong":"欢迎  <ss>  加入！","username":"ss","users":{"9":"ss","10":"ss"}}
+key:10 close
+type=add&ming=ss
+{"add":true,"nrong":"欢迎  <ss>  加入！","username":"ss","users":{"9":"ss","11":"ss"}}
+key:11 close
+type=chat&content=ss&ming=AAA
+{"chat":true,"nrong":"ss","username":"AAA"}
+key:12 close
+type=chat&content=sa&ming=AAA
+{"chat":true,"nrong":"sa","username":"AAA"}
+key:13 close
+key:14 close
+key:15 close
+type=add&ming=AAA
+{"add":true,"nrong":"欢迎  <AAA>  加入！","username":"AAA","users":{"9":"ss","16":"AAA"}}
+type=add&ming=AAAss
+{"add":true,"nrong":"欢迎  <AAAss>  加入！","username":"AAAss","users":{"9":"ss","16":"AAAss"}}
+key:16 close
+type=add&ming=AAA
+{"add":true,"nrong":"欢迎  <AAA>  加入！","username":"AAA","users":{"9":"ss","17":"AAA"}}
+type=add&ming=AAA
+{"add":true,"nrong":"欢迎  <AAA>  加入！","username":"AAA","users":{"9":"ss","17":"AAA"}}
+key:17 close
+type=add&ming=AAA
+{"add":true,"nrong":"欢迎  <AAA>  加入！","username":"AAA","users":{"9":"ss","18":"AAA"}}
+type=add&ming=AAA
+{"add":true,"nrong":"欢迎  <AAA>  加入！","username":"AAA","users":{"9":"ss","18":"AAA"}}
+key:18 close
+type=add&ming=AAA
+{"add":true,"nrong":"欢迎  <AAA>  加入！","username":"AAA","users":{"9":"ss","19":"AAA"}}
+type=add&ming=AAA
+{"add":true,"nrong":"欢迎  <AAA>  加入！","username":"AAA","users":{"9":"ss","19":"AAA"}}
+key:19 close
+type=add&ming=AAA
+{"add":true,"nrong":"欢迎  <AAA>  加入！","username":"AAA","users":{"9":"ss","20":"AAA"}}
+type=add&ming=AAA
+{"add":true,"nrong":"欢迎  <AAA>  加入！","username":"AAA","users":{"9":"ss","20":"AAA"}}
+key:20 close
+type=add&ming=AAA
+{"add":true,"nrong":"欢迎  <AAA>  加入！","username":"AAA","users":{"9":"ss","21":"AAA"}}
+type=chat&content=wq&ming=AAA
+{"chat":true,"nrong":"wq","username":"AAA"}
+key:21 close
+type=add&ming=AAA
+{"add":true,"nrong":"欢迎  <AAA>  加入！","username":"AAA","users":{"9":"ss","22":"AAA"}}
+type=chat&content=ww&ming=AAA
+{"chat":true,"nrong":"ww","username":"AAA"}
+key:22 close
+type=add&ming=AAA
+{"add":true,"nrong":"欢迎  <AAA>  加入！","username":"AAA","users":{"9":"ss","23":"AAA"}}
+type=add&ming=ae
+{"add":true,"nrong":"欢迎  <ae>  加入！","username":"ae","users":{"9":"ss","23":"AAA","24":"ae"}}
+type=chat&content=we&ming=ae
+{"chat":true,"nrong":"we","username":"ae"}
+key:24 close
+type=add&ming=ae
+{"add":true,"nrong":"欢迎  <ae>  加入！","username":"ae","users":{"9":"ss","23":"AAA","25":"ae"}}
+type=add&ming=ae
+{"add":true,"nrong":"欢迎  <ae>  加入！","username":"ae","users":{"9":"ss","23":"AAA","25":"ae"}}
+key:25 close
+type=add&ming=ae
+{"add":true,"nrong":"欢迎  <ae>  加入！","username":"ae","users":{"9":"ss","23":"AAA","26":"ae"}}
+type=chat&content=ee&ming=ae
+{"chat":true,"nrong":"ee","username":"ae"}
+key:26 close
+type=add&ming=ae
+{"add":true,"nrong":"欢迎  <ae>  加入！","username":"ae","users":{"9":"ss","23":"AAA","27":"ae"}}
+type=chat&content=sd&ming=ae
+{"chat":true,"nrong":"sd","username":"ae"}
+key:27 close
+type=add&ming=ae
+{"add":true,"nrong":"欢迎  <ae>  加入！","username":"ae","users":{"9":"ss","23":"AAA","28":"ae"}}
+type=add&ming=ae
+{"add":true,"nrong":"欢迎  <ae>  加入！","username":"ae","users":{"9":"ss","23":"AAA","28":"ae"}}
+key:28 close
+type=add&ming=ae
+{"add":true,"nrong":"欢迎  <ae>  加入！","username":"ae","users":{"9":"ss","23":"AAA","29":"ae"}}
+type=add&ming=ae
+{"add":true,"nrong":"欢迎  <ae>  加入！","username":"ae","users":{"9":"ss","23":"AAA","29":"ae"}}
+type=chat&content=ee&ming=ae
+{"chat":true,"nrong":"ee","username":"ae"}
+key:29 close
+type=add&ming=ae
+{"add":true,"nrong":"欢迎  <ae>  加入！","username":"ae","users":{"9":"ss","23":"AAA","30":"ae"}}
+key:30 close
+type=add&ming=ae
+{"add":true,"nrong":"欢迎  <ae>  加入！","username":"ae","users":{"9":"ss","23":"AAA","31":"ae"}}
+type=chat&content=ewq&ming=ae
+{"chat":true,"nrong":"ewq","username":"ae"}
+type=chat&content=ewqeeq&ming=ae
+{"chat":true,"nrong":"ewqeeq","username":"ae"}
+key:31 close
+type=add&ming=ae
+{"add":true,"nrong":"欢迎  <ae>  加入！","username":"ae","users":{"9":"ss","23":"AAA","32":"ae"}}
+type=add&ming=ae
+{"add":true,"nrong":"欢迎  <ae>  加入！","username":"ae","users":{"9":"ss","23":"AAA","32":"ae"}}
+type=chat&content=eq&ming=ae
+{"chat":true,"nrong":"eq","username":"ae"}
+type=chat&content=qewq&ming=ae
+{"chat":true,"nrong":"qewq","username":"ae"}
+type=chat&content=qwew&ming=ae
+{"chat":true,"nrong":"qwew","username":"ae"}
+key:23 close
+type=add&ming=ae
+{"add":true,"nrong":"欢迎  <ae>  加入！","username":"ae","users":{"9":"ss","32":"ae","33":"ae"}}
+type=chat&content=ew&ming=ae
+{"chat":true,"nrong":"ew","username":"ae"}
+type=chat&content=qw&ming=ae
+{"chat":true,"nrong":"qw","username":"ae"}
+type=chat&content=ewq&ming=ae
+{"chat":true,"nrong":"ewq","username":"ae"}
+type=chat&content=wew23&ming=ae
+{"chat":true,"nrong":"wew23","username":"ae"}
+type=add&ming=3333
+{"add":true,"nrong":"欢迎  <3333>  加入！","username":"3333","users":{"9":"ss","32":"ae","33":"3333"}}
+type=chat&content=qwew&ming=3333
+{"chat":true,"nrong":"qwew","username":"3333"}
+type=chat&content=ewqew&ming=3333
+{"chat":true,"nrong":"ewqew","username":"3333"}
+type=add&ming=sse
+{"add":true,"nrong":"欢迎  <sse>  加入！","username":"sse","users":{"9":"ss","32":"sse","33":"3333"}}
+key:32 close
+type=add&ming=sse
+{"add":true,"nrong":"欢迎  <sse>  加入！","username":"sse","users":{"9":"ss","33":"3333","34":"sse"}}
+type=add&ming=sse
+{"add":true,"nrong":"欢迎  <sse>  加入！","username":"sse","users":{"9":"ss","33":"3333","34":"sse"}}
+type=chat&content=ewqe&ming=sse
+{"chat":true,"nrong":"ewqe","username":"sse"}
+type=chat&content=qwewq&ming=sse
+{"chat":true,"nrong":"qwewq","username":"sse"}
+type=add&ming=ssesd
+{"add":true,"nrong":"欢迎  <ssesd>  加入！","username":"ssesd","users":{"9":"ss","33":"3333","34":"ssesd"}}
+key:34 close
+type=add&ming=ssesd
+{"add":true,"nrong":"欢迎  <ssesd>  加入！","username":"ssesd","users":{"9":"ss","33":"3333","35":"ssesd"}}
+type=add&ming=ssesd
+{"add":true,"nrong":"欢迎  <ssesd>  加入！","username":"ssesd","users":{"9":"ss","33":"3333","35":"ssesd"}}
+type=add&ming=ssesdeq
+{"add":true,"nrong":"欢迎  <ssesdeq>  加入！","username":"ssesdeq","users":{"9":"ss","33":"3333","35":"ssesdeq"}}
+type=add&ming=疯丰富
+{"add":true,"nrong":"欢迎  <疯丰富>  加入！","username":"疯丰富","users":{"9":"ss","33":"3333","35":"疯丰富"}}
+type=chat&content=而且&ming=疯丰富
+{"chat":true,"nrong":"而且","username":"疯丰富"}
+type=chat&content=额外&ming=疯丰富
+{"chat":true,"nrong":"额外","username":"疯丰富"}
+key:33 close
+type=add&ming=疯丰富
+{"add":true,"nrong":"欢迎  <疯丰富>  加入！","username":"疯丰富","users":{"9":"ss","35":"疯丰富","36":"疯丰富"}}
+key:9 close
+key:35 close
+key:36 close
+type=add&ming=疯丰富
+{"add":true,"nrong":"欢迎  <疯丰富>  加入！","username":"疯丰富","users":{"37":"疯丰富"}}
+type=chat&content=而且&ming=疯丰富
+{"chat":true,"nrong":"而且","username":"疯丰富"}
+type=chat&content=恩恩&ming=疯丰富
+{"chat":true,"nrong":"恩恩","username":"疯丰富"}
+type=chat&content=请求&ming=疯丰富
+{"chat":true,"nrong":"请求","username":"疯丰富"}
+type=chat&content=恩恩&ming=疯丰富
+{"chat":true,"nrong":"恩恩","username":"疯丰富"}
+type=chat&content=去&ming=疯丰富
+{"chat":true,"nrong":"去","username":"疯丰富"}
+type=chat&content=请求&ming=疯丰富
+{"chat":true,"nrong":"请求","username":"疯丰富"}
+type=chat&content=俄&ming=疯丰富
+{"chat":true,"nrong":"俄","username":"疯丰富"}
+type=add&ming=疯丰富
+{"add":true,"nrong":"欢迎  <疯丰富>  加入！","username":"疯丰富","users":{"37":"疯丰富","38":"疯丰富"}}
+key:38 close
+type=add&ming=疯丰富
+{"add":true,"nrong":"欢迎  <疯丰富>  加入！","username":"疯丰富","users":{"37":"疯丰富","39":"疯丰富"}}
+type=add&ming=顶顶顶顶顶
+{"add":true,"nrong":"欢迎  <顶顶顶顶顶>  加入！","username":"顶顶顶顶顶","users":{"37":"疯丰富","39":"顶顶顶顶顶"}}
+
+[]
+
+[]
+key:37 close
+key:39 close
+type=add&ming=顶顶顶顶顶
+{"add":true,"nrong":"欢迎  <顶顶顶顶顶>  加入！","username":"顶顶顶顶顶","users":{"40":"顶顶顶顶顶"}}
+type=add&ming=顶顶顶
+{"add":true,"nrong":"欢迎  <顶顶顶>  加入！","username":"顶顶顶","users":{"40":"顶顶顶"}}
+key:40 close
+type=add&ming=顶顶顶
+{"add":true,"nrong":"欢迎  <顶顶顶>  加入！","username":"顶顶顶","users":{"41":"顶顶顶"}}
+type=add&ming=顶顶顶
+{"add":true,"nrong":"欢迎  <顶顶顶>  加入！","username":"顶顶顶","users":{"41":"顶顶顶","42":"顶顶顶"}}
+type=add&ming=顶是
+{"add":true,"nrong":"欢迎  <顶是>  加入！","username":"顶是","users":{"41":"顶是","42":"顶顶顶"}}
+type=chat&content=请求&ming=顶是
+{"chat":true,"nrong":"请求","username":"顶是"}
+type=add&ming=ss
+{"add":true,"nrong":"欢迎  <ss>  加入！","username":"ss","users":{"41":"顶是","42":"顶顶顶","43":"ss"}}
+type=add&ming=SS
+{"add":true,"nrong":"欢迎  <SS>  加入！","username":"SS","users":{"41":"顶是","42":"顶顶顶","43":"SS"}}
+type=chat&content=ewq &ming=SS
+{"chat":true,"nrong":"ewq ","username":"SS"}
+type=chat&content=qwerwwqer&ming=SS
+{"chat":true,"nrong":"qwerwwqer","username":"SS"}
+type=chat&content=qqqq&ming=SS
+{"chat":true,"nrong":"qqqq","username":"SS"}
+type=chat&content=eee&ming=SS
+{"chat":true,"nrong":"eee","username":"SS"}
+type=chat&content=weqwe&ming=SS
+{"chat":true,"nrong":"weqwe","username":"SS"}
+type=chat&content=qweqere&ming=SS
+{"chat":true,"nrong":"qweqere","username":"SS"}
+type=chat&content=鹅鹅鹅饿饿&ming=顶是
+{"chat":true,"nrong":"鹅鹅鹅饿饿","username":"顶是"}
+type=chat&content=是&ming=顶是
+{"chat":true,"nrong":"是","username":"顶是"}
+type=chat&content=收到&ming=顶是
+{"chat":true,"nrong":"收到","username":"顶是"}
+type=chat&content=去&ming=顶是
+{"chat":true,"nrong":"去","username":"顶是"}
+type=chat&content=恩恩&ming=顶是
+{"chat":true,"nrong":"恩恩","username":"顶是"}
+type=chat&content=请求&ming=顶是
+{"chat":true,"nrong":"请求","username":"顶是"}
+type=chat&content=我&ming=顶是
+{"chat":true,"nrong":"我","username":"顶是"}
+type=chat&content=qwe &ming=SS
+{"chat":true,"nrong":"qwe ","username":"SS"}
+key:42 close
+type=add&ming=顶是
+{"add":true,"nrong":"欢迎  <顶是>  加入！","username":"顶是","users":{"41":"顶是","43":"SS","44":"顶是"}}
+type=chat&content=恶趣味&ming=顶是
+{"chat":true,"nrong":"恶趣味","username":"顶是"}
+type=add&ming=让他
+{"add":true,"nrong":"欢迎  <让他>  加入！","username":"让他","users":{"41":"让他","43":"SS","44":"顶是"}}
+type=chat&content=收到&ming=让他
+{"chat":true,"nrong":"收到","username":"让他"}
+key:44 close
+type=add&ming=让他
+{"add":true,"nrong":"欢迎  <让他>  加入！","username":"让他","users":{"41":"让他","43":"SS","45":"让他"}}
+type=chat&content=去去去&ming=让他
+{"chat":true,"nrong":"去去去","username":"让他"}
+type=chat&content=额外&ming=让他
+{"chat":true,"nrong":"额外","username":"让他"}
+type=chat&content=请求&ming=让他
+{"chat":true,"nrong":"请求","username":"让他"}
+type=add&ming=SSe
+{"add":true,"nrong":"欢迎  <SSe>  加入！","username":"SSe","users":{"41":"让他","43":"SSe","45":"让他"}}
+key:41 close
+type=add&ming=让他
+{"add":true,"nrong":"欢迎  <让他>  加入！","username":"让他","users":{"43":"SSe","45":"让他","46":"让他"}}
+type=chat&content=试试&ming=让他
+{"chat":true,"nrong":"试试","username":"让他"}
