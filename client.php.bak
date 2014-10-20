@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+var socket;
+$(document).ready(function() {
+	
+	if(!("WebSocket" in window)){
+		$('#chatLog, input, button, #examples').fadeOut("fast");	
+		$('<p>Oh no, you need a browser that supports WebSockets. How about <a href="http://www.google.com/chrome">Google Chrome</a>?</p>').appendTo('#container');		
+	}else{
+		//The user has WebSockets
+		connect();
+	}//End connect()
+	
+	function connect(){
+		var host = "ws://localhost:8000";
+				
+		try{
+			socket = new WebSocket(host);
+			message('<p class="event">Socket Status: '+socket.readyState);
+			socket.onopen = function(){
+				message('<p class="event">Socket Status: '+socket.readyState+' (open)');	
+			}
+			
+			socket.onmessage = function(msg){
+				message('<p class="message">Received: '+msg.data);		
+				console.log(msg.data);
+				var jdata = jQuery.parseJSON(msg.data);
+				addToUserList(jdata.users);
+			}
+			
+			socket.onclose = function(){
+				message('<p class="event">Socket Status: '+socket.readyState+' (Closed)');
+			}			
+				
+		} catch(exception){
+			message('<p>Error'+exception);
+		}
+				
+			
+			
+		$('#text').keypress(function(event) {
+				  if (event.keyCode == '13') {
+					 send(socket);
+				   }
+		});	
+		
+		$('#disconnect').click(function(){
+			socket.close();
+		});
+
+	}	
+});
+
+function send(socket){
+				var text = $('#text').val();
+				if(text==""){
+					message('<p class="warning">Please enter a message');
+					return ;	
+				}
+				try{
+					socket.send('type=add&ming='+text);
+					message('<p class="event">Sent: '+text)
+				} catch(exception){
+					message('<p class="warning">');
+				}
+				$('#text').val("");
+			}
+			
+			function message(msg){
+				$('#chatLog').append(msg+'</p>');
+			}//End message()
+</script>
+<meta charset=utf-8 />
+<style type="text/css">
+body{font-family:Arial, Helvetica, sans-serif;}
+#container{
+	border:5px solid grey;
+	width:1000px;
+	margin:0 auto;
+	padding:10px;
+	float:left;
+}
+.main{
+	width:800px;
+	float:left;
+	padding:5px;
+	border:2px solid blue;
+}
+.list{
+	width:100px;
+	float:left;
+}
+#chatLog{
+	padding:5px;
+	border:1px solid black;	
+}
+#chatLog p{margin:0;}
+.event{color:#999;}
+.warning{
+	font-weight:bold;
+	color:#CCC;
+}
+</style>
+<title>WebSockets Client</title>
+
+</head>
+<body>
+  <div id="wrapper">
+  
+  	<div id="container">
+		<div class="main">
+    	<h1>WebSockets Client</h1>
+        
+        <div id="chatLog">
+			<a id="clear_scr" href="javascript:;" class="qp">清屏</a>
+        
+        </div>
+        <p id="examples">e.g. try 'hi', 'name', 'age', 'today'</p>
+        
+    	<input id="text" type="text" />
+		<button id="sd">发送</button>
+        <button id="disconnect">断开</button>
+		</div>
+		<div id="userList" class="roll_right list">
+			<ul>
+			</ul>
+		</div>
+	</div>
+  </div>
+<script type="text/javascript">
+$(function() {
+		$("#clear_scr").on("click",function(){
+			$(this).find("~").remove();
+		});
+		$("#sd").on("click",function(){
+			send(socket);
+		})
+});
+
+function addToUserList( arr ){
+	if(!arr) return ;
+	$.each(arr,function(k,v){
+		var $oldLi = $("#userList ul li#"+k);
+		if($oldLi.length == 0){
+			var $li = $("<li>"+v + "</li>");
+			$li.attr("id",k);
+			$("#userList ul").append($li);
+		}else{
+			$oldLi.text(v);
+		}
+	});
+}
+</script>
+</body>
+</html>​
