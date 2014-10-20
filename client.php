@@ -66,14 +66,17 @@ function addToUserList( arr ){
 <script type="text/javascript">
 var socket;
 $(document).ready(function() {
+	webSocketConnect();
 
 	$("#rename_form").submit(function(){
-		send(socket);
-		$.cookie("name",$("#text").text());
+		send( $('#text').val() );
+		var date = new Date(); 
+		date.setTime(date.getTime() + ( 30 * 60 * 1000)); 
+		$.cookie("name",$("#text").val(),{ expires: date });
+		$('#text').val("");
 		return false;
 	});
 	
-	webSocketConnect();
 
 
 	function webSocketConnect(){
@@ -96,6 +99,10 @@ $(document).ready(function() {
 				message('Socket Status: '+socket.readyState+' (open)' ,'event');	
 				$("#disconnect").attr("disabled",false);
 				$("#reconnect").attr("disabled",true);
+				if($.cookie('name')){
+					console.log($.cookie('name'));
+					socket.send('type=add&ming='+$.cookie('name'));
+				}	
 			}
 			
 			socket.onmessage = function(msg){
@@ -109,7 +116,9 @@ $(document).ready(function() {
 				$("#reconnect").attr("disabled",false);
 				$("#disconnect").attr("disabled",true);
 				$("#userList li").addClass("disconnected").removeClass("connected");
-			}			
+			}
+
+			
 				
 		} catch(exception){
 			message(exception,"error");
@@ -128,9 +137,7 @@ $(document).ready(function() {
 	}	
 });
 
-function send(socket){
-	console.log("send is called");
-	var text = $('#text').val();
+function send(text){
 	if(text==""){
 		//message('Please enter a message','warning');
 		return ;	
@@ -139,9 +146,9 @@ function send(socket){
 		socket.send('type=add&ming='+text);
 		message('Sent: '+text,'event')
 	} catch(exception){
-		message('Warning!','warning');
+		message(' 消息未发送成功 ','Warning!');
 	}
-	$('#text').val("");
+
 }
 
 function parseMessage(msg){
