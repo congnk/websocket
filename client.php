@@ -38,7 +38,6 @@
 		<button id="reconnect" disabled>重新连接</button>
 			<div id="console_area" class="pane">
 				<a href="javascript:;" class="clear_scr">清除</a>
-        
 			</div>
 		</div>
 		<div id="userList" class="roll_right list">
@@ -56,21 +55,6 @@ $(function() {
 		$("#text").focus();
 });
 
-//包括从其他会话中传递进来的消息
-function addToUserList( arr ){
-	if(!arr) return ;
-	$.each(arr,function(k,v){
-		var $oldLi = $("#userList ul li#"+k);
-		if($oldLi.length == 0){
-			var $li = $("<li>"+v + "</li>");
-			$li.attr("id",k).addClass("connected");
-			$("#userList ul").append($li);
-		}else{
-			$oldLi.text(v);
-			$oldLi.addClass("connected").removeClass("disconnected");
-		}
-	});
-}
 </script>
 <script type="text/javascript">
 var socket;
@@ -103,42 +87,51 @@ $(document).ready(function() {
 			connect();
 		}//End connect()
 	}
-	
+	function initUser(socket){
+		var old_name = $.cookie('name') ;
+		if(old_name){
+			$("#text").val( $.cookie('name') );
+			socket.send('type=add&ming='+$.cookie('name'));
+			console.log(20 );
+		}else{
+			var name ;
+			if( $("#text").val().length >0 ){
+				name = $("#text").val();
+			}else{
+				name = defaultName() ;
+			}
+			socket.send('type=add&ming='+ name );
+			$("#text").val( name );
+		}
+	}
 	function connect(){
 		var host = "ws://localhost:8000";
 
 		try{
 			socket = new WebSocket(host);
-			message('Socket Status: '+socket.readyState,'event');
+			operateLog('Socket Status: '+socket.readyState,'event');
 			socket.onopen = function(){
-				message('Socket Status: '+socket.readyState+' (open)' ,'event');	
+				operateLog('Socket Status: '+socket.readyState+' (open)' ,'event');	
 				$("#disconnect").attr("disabled",false);
 				$("#reconnect").attr("disabled",true);
-				if($.cookie('name')){
-					$("#text").val( $.cookie('name') );
-					socket.send('type=add&ming='+$.cookie('name'));
-				}	
+				initUser(socket);
 			}
 			
 			socket.onmessage = function(msg){
 				console.log(msg.data);
 				parseMessage(msg);
-		
 			}
 			
 			socket.onclose = function(){
-				message('Socket Status: '+socket.readyState+' (Closed)' ,'event');
+				console.log("关闭ing");
+				operateLog('Socket Status: '+socket.readyState+' (Closed)' ,'event');
 				$("#reconnect").attr("disabled",false);
 				$("#disconnect").attr("disabled",true);
 				$("#userList li").addClass("disconnected").removeClass("connected");
 			}
-
-			
-				
 		} catch(exception){
 			message(exception,"error");
 		}
-
 		
 		$('#disconnect').on("click",function(){
 			socket.close();
@@ -146,9 +139,7 @@ $(document).ready(function() {
 		
 		$('#reconnect').on("click",function(){
 			webSocketConnect();
-			reconnect();
 		});
-
 	}	
 });
 
@@ -170,8 +161,7 @@ function sendMessage(text){
 		return ;	
 	}
 	try{
-		var uid = $.cookie("name");
-		socket.send('type=chat&content='+text + '&ming=' + uid );
+		socket.send('type=chat&content='+text );
 		operateLog('Sent: '+text ,"normal");
 	} catch(exception){
 		operateLog(' 消息未发送成功 ','warning');
@@ -181,6 +171,12 @@ function sendMessage(text){
 function operateLog(text,type){
 	var $aa = $("<p></p>").addClass(type).text(text);
 	$('#console_area').append( $aa );
+}
+
+function defaultName(){
+	var str = new Date().getTime() + "";
+	str = "游客" + str.slice(-5);
+	return str;
 }
 
 function parseMessage(msg){
@@ -201,21 +197,29 @@ function parseMessage(msg){
 		message(jdata.nrong,'chat');
 		return ;
 	}
-}
-
-function reconnect(){
-	if($.cookie('name')){
-		socket.send('type=add&ming='+$.cookie('name'));
-	}
-	
-}
-			
+}			
 	function message(msg , style_class){
 		var $aa = $("<p></p>").addClass(style_class).text(msg);
 		$('#chatLog').append( $aa );
 		var div = $('#chatLog')[0];
 		div.scrollTop = div.scrollHeight;
 	}//End message()
+
+//包括从其他会话中传递进来的消息
+function addToUserList( arr ){
+	if(!arr) return ;
+	$.each(arr,function(k,v){
+		var $oldLi = $("#userList ul li#"+k);
+		if($oldLi.length == 0){
+			var $li = $("<li>"+v + "</li>");
+			$li.attr("id",k).addClass("connected");
+			$("#userList ul").append($li);
+		}else{
+			$oldLi.text(v);
+			$oldLi.addClass("connected").removeClass("disconnected");
+		}
+	});
+}
 </script>
 </body>
 </html>​

@@ -30,8 +30,9 @@ class Sock{
                     );
                 }else{
                     $len=socket_recv($sock,$buffer,2048,0);
+					$this->e("接收到：".$len);
                     $k=$this->search($sock);
-                    if($len<13){
+                    if($len<10){	//浏览器请求关闭时，$len == 6
                         $name=$this->users[$k]['ming'];
                         $this->close($sock);
                         $this->send2($name,$k);
@@ -109,9 +110,9 @@ class Sock{
             $mask[] = hexdec(substr($msg[1],10,2));  
            
             $s = 12;  
-            $e = strlen($msg[1])-2;  
+            $e = strlen($msg[1]);  
             $n = 0;  
-            for ($i=$s; $i<= $e; $i+= 2) {  
+            for ($i=$s; $i < $e; $i+= 2) {  
                 $data .= chr($mask[$n%4]^hexdec(substr($msg[1],$i,2)));  
                 $n++;  
             }  
@@ -149,7 +150,6 @@ class Sock{
             $this->users[$k]['ming']=$g['ming'];
             $ar['add']=true;
             $ar['nrong']='欢迎  <'.$g['ming'].'>  加入！';
-			$ar['username']= $g['ming'];
             $ar['users']=$this->getusers();
             $key='all';
         }else if($g['type']=='ltiao'){
@@ -158,7 +158,7 @@ class Sock{
         }else if($g['type']=='chat'){
 			$ar['chat']=true;
             $ar['nrong'] = $g['content'];
-			$ar['username'] = $g['ming'];
+			$ar['username'] = $this->users[$k]['ming'];
 			$key='all';
 		}
         $msg=json_encode($ar, JSON_UNESCAPED_UNICODE);
